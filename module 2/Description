@@ -2,3 +2,11 @@
 
 Welcome to Module 2 of the Data Engineering Zoomcamp! This week, we’ll dive into workflow orchestration using Kestra.  
 Kestra is an open-source, event-driven orchestration platform that simplifies building both scheduled and event-driven workflows. By adopting Infrastructure as Code practices for data and process orchestration, Kestra enables you to build reliable workflows with just a few lines of YAML.  
+
+In this section, you'll learn how to install Kestra, as well as the key concepts required to build your first workflow. Once our first workflow is built, we can extend this further by executing a Python script inside of a workflow.
+
+You will:  
+
+    1. Install Kestra using Docker Compose
+    2. Learn the concepts of Kestra to build your first workflow
+    3. Execute a Python script inside of a Kestra Flow
