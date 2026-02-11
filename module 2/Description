@@ -46,3 +46,66 @@ Kestra is a great choice for workflow orchestration:
     Support for any programming language - pick the right tool for the job
     Schedule or Event Based Triggers - have your workflows respond to data
 
+## 2.2 Getting Started with Kestra  
+In this section, you'll learn how to install Kestra, as well as the key concepts required to build your first workflow. Once our first workflow is built, we can extend this further by executing a Python script inside of a workflow.
+
+You will:
+
+    - Install Kestra using Docker Compose
+    - Learn the concepts of Kestra to build your first workflow
+    - Execute a Python script inside of a Kestra Flow  
+
+### 2.2.1 Installing Kestra  
+o install Kestra, we are going to use Docker Compose. We already have a Postgres database set up, along with pgAdmin from Module 1. We can continue to use these with Kestra but we'll need to make a few modifications to our Docker Compose file.
+
+Use this example Docker Compose file to correctly add the 2 new services and set up the volumes correctly.
+
+Add information about setting a username and password.
+
+We'll set up Kestra using Docker Compose containing one container for the Kestra server and another for the Postgres database:  
+
+cd 02-workflow-orchestration
+docker compose up -d  
+
+Note: Check that pgAdmin isn't running on the same ports as Kestra. If so, check out the FAQ at the bottom of the README.
+
+Once the container starts, you can access the Kestra UI at http://localhost:8080.
+
+To shut down Kestra, go to the same directory and run the following command:  
+
+docker compose down  
+
+### Add Flows to Kestra  
+Flows can be added to Kestra by copying and pasting the YAML directly into the editor, or by adding via Kestra's API. See below for adding programmatically.
+Add Flows to Kestra programmatically
+
+https://youtu.be/wgPxC4UjoLM  
+
+### 2.2.2 - Kestra Concepts  
+To start building workflows in Kestra, we need to understand a number of concepts.
+
+    Flow - a container for tasks and their orchestration logic.
+    Tasks - the steps within a flow.
+    Inputs - dynamic values passed to the flow at runtime.
+    Outputs - pass data between tasks and flows.
+    Triggers - mechanism that automatically starts the execution of a flow.
+    Execution - a single run of a flow with a specific state.
+    Variables - key–value pairs that let you reuse values across tasks.
+    Plugin Defaults - default values applied to every task of a given type within one or more flows.
+    Concurrency - control how many executions of a flow can run at the same time.
+
+While there are more concepts used for building powerful workflows, these are the ones we're going to use to build our data pipelines.
+
+The flow 01_hello_world.yaml showcases all of these concepts inside of one workflow:
+
+    The flow has 5 tasks: 3 log tasks and a sleep task
+    The flow takes an input called name.
+    There is a variable that takes the name input to generate a full welcome message.
+    An output is generated from the return task and is logged in a later log task.
+    There is a trigger to execute this flow every day at 10am.
+    Plugin Defaults are used to make both log tasks send their messages as ERROR level.
+    We have a concurrency limit of 2 executions. Any further ones made while 2 are running will fail.
+
+
+
+
