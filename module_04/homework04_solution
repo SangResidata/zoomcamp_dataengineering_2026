@@ -3,6 +3,9 @@
 In this homework, we'll use the dbt project in `04-analytics-engineering/taxi_rides_ny/` to transform NYC taxi data and answer questions by querying the models.  
 
 Goal: Transforming the data loaded in DWH into Analytical Views developing a dbt project.  
+
+This module focuses on yellow and green taxi data (2019-2020). While Module 3 may have included FHV data, it is not used in this dbt project.  
+
   
 
 ## Setup
