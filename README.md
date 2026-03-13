@@ -10,9 +10,6 @@
 Master the fundamentals of data engineering by building an end-to-end data pipeline from scratch. Gain hands-on experience with industry-standard tools and best practices.
 </p>
 
-<p align="center">
-<a href="https://airtable.com/shr6oVXeQvSI5HuWD"><img src="https://user-images.githubusercontent.com/875246/185755203-17945fd1-6b64-46f2-8377-1011dcb1a444.png" height="50" /></a>
-</p>
 
 <p align="center">
 <a href="https://datatalks.club/slack.html">Join Slack</a> •
