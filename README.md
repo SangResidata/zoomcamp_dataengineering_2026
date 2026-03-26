@@ -27,9 +27,9 @@ Master the fundamentals of data engineering by building an end-to-end data pipel
 
 ### Self-Paced Learning
 All course materials are freely available for independent study. Follow these steps:
-1. Watch the course videos.
-2. Join the [Slack community](https://datatalks.club/slack.html).
-3. Refer to the [FAQ document](https://datatalks.club/faq/data-engineering-zoomcamp.html) for guidance.
+1. Watch the course videos
+2. Join the [Slack community](https://datatalks.club/slack.html)
+3. Refer to the [FAQ document](https://datatalks.club/faq/data-engineering-zoomcamp.html) for guidance
 
 ## Syllabus Overview
 The course consists of structured modules, hands-on workshops, and a final project to reinforce your learning.
