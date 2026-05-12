@@ -23,8 +23,8 @@ Develop a dashboard with two tiles by:
 
 The pipeline could be **stream** or **batch**: this is the first thing you'll need to decide 
 
-* **Stream**: If you want to consume data in real-time and put them to data lake
-* **Batch**: If you want to run things periodically (e.g. hourly/daily)
+* **Stream**: If you want to consume data in real-time and put them to data lake.
+* **Batch**: If you want to run things periodically (e.g. hourly/daily).
 
 ## Technologies 
 
